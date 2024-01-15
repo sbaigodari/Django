@@ -1,0 +1,9 @@
+{%extends 'listings/base.html'%}
+{%block content%}
+<h1>Mise à jour listing : </h1>
+<form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit">modifier</button>
+</form>
+{%endblock%}
